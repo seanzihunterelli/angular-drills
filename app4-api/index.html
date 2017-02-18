@@ -1,6 +1,15 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller="apiCtrl">
+		<div ng-repeat="smurfs in data">
+			<img src="http://placecage.com/200/200">
+			<div>
+			{{smurfs.name}}
+			</div>
+			<div>
+				{{smurfs.id}}
+				{{smurfs.created}}
+			</div>
+		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
